@@ -1,0 +1,15 @@
+.add-user {
+  width: 87vw;
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-inline: auto;
+  margin-block: 5rem;
+}
+
+.add-user__title {
+  color: var(--iris);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}

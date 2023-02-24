@@ -1,0 +1,34 @@
+.form {
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.form__name-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.form__name-input {
+  color: inherit;
+  font-size: 1rem;
+  background-color: var(--overlay);
+  padding: 0.5rem 1rem;
+  border-radius: 100vh;
+  border: 0.1rem solid var(--hl-high);
+  margin-bottom: 1rem;
+}
+
+.form__submit-btn {
+  color: inherit;
+  background-color: var(--hl-low);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 100vh;
+  cursor: pointer;
+  transition: all ease-in 0.25s;
+}
+
+.form__submit-btn:hover {
+  background-color: var(--hl-mid);
+}

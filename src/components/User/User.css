@@ -1,5 +1,27 @@
 .users__item {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--overlay);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+}
+
+.users__delete-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.users__delete-icon {
+  height: 1rem;
+}
+
+.users__delete-icon path {
+  fill: var(--love);
+  transition: var(--transition-ease-in);
+}
+
+.users__delete-btn:hover .users__delete-icon path {
+  fill: var(--dawn-love);
 }

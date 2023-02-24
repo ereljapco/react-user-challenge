@@ -17,6 +17,7 @@
   --subtle: #908caa;
   --text: #e0def4;
   --love: #eb6f92;
+  --dawn-love: #b4637a;
   --gold: #f6c177;
   --rose: #ea9a97;
   --pine: #3e8fb0;
@@ -26,6 +27,7 @@
   --hl-mid: #44415a;
   --hl-high: #56526e;
   --border-radius-pill: 100vh;
+  --transition-ease-in: all ease-in 250ms;
 }
 
 body {

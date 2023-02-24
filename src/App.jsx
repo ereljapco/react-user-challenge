@@ -3,6 +3,7 @@ import './App.css';
 import Form from './components/Form/Form';
 import List from './components/List/List';
 import usersList from './data/users';
+import { v4 as uuid } from 'uuid';
 
 export default function App() {
   const [name, setName] = useState('');
@@ -15,10 +16,15 @@ export default function App() {
   function onSubmit(e) {
     e.preventDefault();
 
-    const id = users.length + 1;
-
-    setUsers([...users, { id: id, name: name }]);
+    setUsers([...users, { id: uuid(), name: name }]);
     setName('');
+  }
+
+  function deleteUser(e) {
+    const userId = e.currentTarget.parentElement.dataset['id'];
+    const newUserList = users.filter((user) => user.id != userId);
+
+    setUsers([...newUserList]);
   }
 
   return (
@@ -29,7 +35,7 @@ export default function App() {
         handleNameChange={handleNameChange}
         onSubmit={onSubmit}
       />
-      <List users={users} />
+      <List users={users} deleteUser={deleteUser} />
     </section>
   );
 }

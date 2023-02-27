@@ -16,6 +16,8 @@ export default function App() {
   function onSubmit(e) {
     e.preventDefault();
 
+    if (!name) return;
+
     const newUser = { id: uuid(), name: name };
     const newUserList = [...users, newUser];
 

@@ -1,5 +1,6 @@
 .add-user {
   width: 87vw;
+  max-width: 35rem;
   background-color: var(--surface);
   padding: 2rem;
   border-radius: 1rem;

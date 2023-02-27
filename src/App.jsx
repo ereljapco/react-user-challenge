@@ -20,9 +20,8 @@ export default function App() {
     setName('');
   }
 
-  function deleteUser(e) {
-    const userId = e.currentTarget.parentElement.dataset['id'];
-    const newUserList = users.filter((user) => user.id != userId);
+  function deleteUser(id) {
+    const newUserList = users.filter((user) => user.id != id);
 
     setUsers([...newUserList]);
   }

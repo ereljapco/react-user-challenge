@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import { v4 as uuid } from 'uuid';
 import './App.css';
 import Form from './components/Form/Form';
 import List from './components/List/List';
 import usersList from './data/users';
-import { v4 as uuid } from 'uuid';
 
 export default function App() {
   const [name, setName] = useState('');
